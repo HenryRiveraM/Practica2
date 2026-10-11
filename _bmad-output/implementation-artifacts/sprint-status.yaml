@@ -1,0 +1,66 @@
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created, ready for development
+#   - in-progress: Developer actively working on implementation
+#   - review: Implementation complete, ready for review
+#   - done: Story completed
+
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+
+# Action Item Status:
+#   - open: Committed during a retrospective, not yet addressed
+#   - in-progress: Actively being worked on
+#   - done: Completed
+
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' automatically when its first story starts (via build's sprint sync)
+# - Stories can be worked in parallel if team capacity allows
+# - Developer typically creates the next story after the previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
+# - Retrospective appends its action items to action_items; the status view surfaces open ones
+generated: 10-08-2026 10:08
+last_updated: 10-08-2026 17:34
+project: Practica2
+project_key: NOKEY
+tracking_system: file-system
+story_location: _bmad-output/implementation-artifacts
+development_status:
+  epic-1: in-progress
+  1-1-configurar-los-dos-entornos-platformio-independientes: review
+  1-2-reconstruir-y-validar-mensajes-iot-range-1: backlog
+  1-3-registrar-clientes-tcp-de-forma-simultánea: backlog
+  1-4-obtener-lecturas-válidas-del-hc-sr04: backlog
+  1-5-enviar-mediciones-y-errores-del-sensor-al-servidor: backlog
+  1-6-recuperar-la-sesión-del-sensor-y-vencer-datos-obsoletos: backlog
+  1-7-medir-la-exactitud-del-hc-sr04: backlog
+  1-8-verificar-la-frecuencia-de-lecturas-válidas: backlog
+  epic-1-retrospective: optional
+
+  epic-2: backlog
+  2-1-clasificar-las-distancias-en-python-con-límites-exactos: backlog
+  2-2-generar-y-serializar-comandos-set-completos: backlog
+  2-3-mantener-los-leds-apagados-hasta-un-set-válido: backlog
+  2-4-aplicar-y-confirmar-comandos-iot-range-1-en-el-actuador: backlog
+  2-5-parpadear-el-led-rojo-a-4-hz-sin-bloquear-tcp: backlog
+  2-6-vigilar-el-heartbeat-del-actuador-y-apagar-ante-pérdida: backlog
+  2-7-integrar-el-recorrido-nominal-sensor-servidor-actuador: backlog
+  2-8-mantener-el-estado-seguro-ante-fallas-y-reconexiones: backlog
+  2-9-verificar-el-tiempo-de-respuesta-extremo-a-extremo: backlog
+  2-10-verificar-estabilidad-durante-diez-minutos: backlog
+  2-11-validar-físicamente-las-salidas-y-el-circuito-seguro: backlog
+  2-12-documentar-los-diagramas-técnicos-exigidos: backlog
+  2-13-completar-el-informe-técnico-y-documentar-el-código: backlog
+  2-14-preparar-el-repositorio-evidencias-y-entrega-académica: backlog
+  2-15-ensayar-la-demostración-integrada: backlog
+  2-16-preparar-la-defensa-individual-de-cada-integrante: backlog
+  epic-2-retrospective: optional
